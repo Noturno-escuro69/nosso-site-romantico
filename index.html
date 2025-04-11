@@ -27,15 +27,34 @@
   </div>
 
   <!-- Música de fundo -->
-<audio id="bg-music" loop>
-    <source src="samba-in-paris.mp3.mp3" type="audio/mpeg">
-    Seu navegador não suporta áudio.
-  </audio>
+<audio id="bg-music" loop></audio>
   
   <!-- Botão Play/Pause -->
   <div class="music-controls">
     <button id="toggle-music">🎵 Tocar Música</button>
   </div>
+
+  <div class="music-player">
+    <h2>🎶 Tocando agora: <span id="track-name">Nenhuma música</span></h2>
+    
+    <div class="controls">
+      <button id="prev-track">⏮️</button>
+      <button id="toggle-music">▶️</button>
+      <button id="next-track">⏭️</button>
+    </div>
+
+    <div class="progress-container">
+      <span id="current-time">0:00</span>
+      <div class="progress-bar" id="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <span id="duration">0:00</span>
+    </div>
+    
+  
+    <audio id="bg-music"></audio>
+  </div>
+  
 
   <script src="script.js"></script>
 </body>
