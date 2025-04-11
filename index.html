@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso Cantinho ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+  <header>
+    Nosso Cantinho ❤️
+  </header>
+
+  <div class="upload-section">
+    <input type="file" accept="image/*" id="photoInput">
+    <button onclick="addPhoto()">Adicionar Foto</button>
+  </div>
+
+  <div class="photos" id="photos"></div>
+
+  <div class="share-buttons">
+    <button onclick="copyLink()">Compartilhar Link</button>
+    <button onclick="generateQRCode()">Gerar QR Code</button>
+    <div id="qrcode"></div>
+  </div>
+
+  <!-- Música de fundo -->
+<audio id="bg-music" loop>
+    <source src="samba-in-paris.mp3.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+  
+  <!-- Botão Play/Pause -->
+  <div class="music-controls">
+    <button id="toggle-music">🎵 Tocar Música</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
