@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso Cantinho ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+  <header>
+    Nosso Cantinho ❤️
+  </header>
+
+  <div class="upload-section">
+    <input type="file" accept="image/*" id="photoInput">
+    <button onclick="addPhoto()">Adicionar Foto</button>
+  </div>
+
+  <div class="photos" id="photos"></div>
+
+  <div class="share-buttons">
+    <button onclick="copyLink()">Compartilhar Link</button>
+    <button onclick="generateQRCode()">Gerar QR Code</button>
+    <div id="qrcode"></div>
+  </div>
+
+  <!-- Música de fundo -->
+<audio id="bg-music" loop></audio>
+  
+  <!-- Botão Play/Pause -->
+  <div class="music-controls">
+    <button id="toggle-music">🎵 Tocar Música</button>
+  </div>
+
+  <div class="music-player">
+    <h2>🎶 Tocando agora: <span id="track-name">Nenhuma música</span></h2>
+    
+    <div class="controls">
+      <button id="prev-track">⏮️</button>
+      <button id="toggle-music">▶️</button>
+      <button id="next-track">⏭️</button>
+    </div>
+
+    <div class="progress-container">
+      <span id="current-time">0:00</span>
+      <div class="progress-bar" id="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <span id="duration">0:00</span>
+    </div>
+    
+  
+    <audio id="bg-music"></audio>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

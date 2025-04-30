@@ -1,0 +1,100 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
+  color: #c71585;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(199, 21, 133, 0.2);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.player, .photo-section {
+  margin-top: 20px;
+}
+
+#song-name {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.controls button {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  background-color: #ff69b4;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #ff1493;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.progress-bar {
+  flex: 1;
+  background-color: #ffe4ec;
+  border-radius: 10px;
+  height: 8px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: #ff69b4;
+  height: 100%;
+  width: 0%;
+  transition: width 0.2s;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+#photo-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.photo-item {
+  background: #fff0f5;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(255, 105, 180, 0.2);
+}
+
+.photo-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
